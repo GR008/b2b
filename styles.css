@@ -112,7 +112,7 @@ section.scene {
   position: relative;
   padding: 84px 30px;
 }
-section.scene + section.scene { padding-top: 0; }
+section.scene + section.scene { padding-top: 84px; }
 
 /* ---------- Typography helpers ---------- */
 .eyebrow {
