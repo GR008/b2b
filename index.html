@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="terracota">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Guido & Giovanna · Nos casamos</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ====================================================== -->
+<!-- ENVELOPE INTRO                                          -->
+<!-- ====================================================== -->
+<div id="envelope">
+  <div class="env-stage">
+    <div class="env-card">
+      <div class="env-body"></div>
+      <div class="env-seal">G&amp;G</div>
+      <div class="env-flap"></div>
+    </div>
+    <div class="env-prompt">
+      <p class="eyebrow">Estás invitado</p>
+      <button class="env-open-btn" id="openBtn">Abrir invitación</button>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================== -->
+<!-- INVITATION                                              -->
+<!-- ====================================================== -->
+<main class="invite">
+
+  <!-- ---------- Cover ---------- -->
+  <section class="scene cover" data-screen-label="Portada">
+    <img class="cover-logo reveal" style="--d:80ms" src="assets/logo-b2b.jpg"
+         alt="B2B · Giovanna y Guido · 11 · 10 · 2026" />
+    <p class="tagline reveal" style="--d:360ms">¡nos casamos!</p>
+    <div class="scroll-cue reveal" style="--d:560ms">
+      <span>Deslizá</span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- ---------- Countdown ---------- -->
+  <section class="scene countdown" data-screen-label="Cuenta regresiva">
+    <div class="ornament reveal">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+        <path d="M16 4c0 6-4 9-4 13a4 4 0 0 0 8 0c0-4-4-7-4-13Z"/>
+        <path d="M16 30V18"/><path d="M16 22c-3-1-5-3-6-6M16 24c3-1 5-3 6-6"/>
+      </svg>
+    </div>
+    <h2 class="section-title reveal" style="--d:60ms">Falta poco</h2>
+    <p class="lede reveal" style="--d:140ms">Para celebrar juntos el día en que unimos nuestras vidas.</p>
+    <div class="count-grid reveal" style="--d:220ms" id="countdown">
+      <div class="count-cell"><div class="num" data-c="d">—</div><div class="lab">Días</div></div>
+      <div class="count-cell"><div class="num" data-c="h">—</div><div class="lab">Horas</div></div>
+      <div class="count-cell"><div class="num" data-c="m">—</div><div class="lab">Minutos</div></div>
+      <div class="count-cell"><div class="num" data-c="s">—</div><div class="lab">Segundos</div></div>
+    </div>
+  </section>
+
+  <!-- ---------- Gallery ---------- -->
+  <section class="scene gallery" data-screen-label="Galería">
+    <div class="ornament reveal">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+        <path d="M16 4c0 6-4 9-4 13a4 4 0 0 0 8 0c0-4-4-7-4-13Z"/>
+        <path d="M16 30V18"/><path d="M16 22c-3-1-5-3-6-6M16 24c3-1 5-3 6-6"/>
+      </svg>
+    </div>
+    <h2 class="section-title reveal" style="--d:60ms">Nuestra historia</h2>
+    <p class="lede center reveal" style="--d:140ms">Deslizá para recorrer algunos momentos en el camino hacia el sí.</p>
+
+    <div class="carousel reveal" style="--d:220ms" id="carousel">
+      <div class="car-viewport" id="carViewport">
+        <div class="car-track" id="carTrack">
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-9.jpg" alt="Giovanna y Guido" style="object-position:50% 46%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-3.jpg" alt="Giovanna y Guido" style="object-position:42% 42%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-12.jpg" alt="Giovanna y Guido" style="object-position:50% 46%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-6.jpg" alt="Giovanna y Guido" style="object-position:62% 40%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-1.jpg" alt="Giovanna y Guido" style="object-position:50% 38%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-14.jpg" alt="Giovanna y Guido" style="object-position:42% 46%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-5.jpg" alt="Giovanna y Guido" style="object-position:50% 30%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-11.jpg" alt="Giovanna y Guido" style="object-position:50% 40%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-2.jpg" alt="Giovanna y Guido" style="object-position:58% 40%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-13.jpg" alt="Giovanna y Guido" style="object-position:50% 33%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-8.jpg" alt="Giovanna y Guido" style="object-position:50% 42%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-4.jpg" alt="Giovanna y Guido" style="object-position:50% 42%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-10.jpg" alt="Giovanna y Guido" style="object-position:50% 42%" /></div></div>
+          <div class="car-slide"><div class="photo"><img class="ph-img" src="assets/historia-7.jpg" alt="Giovanna y Guido" style="object-position:50% 36%" /></div></div>
+        </div>
+      </div>
+      <button class="car-nav prev" id="carPrev" aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5-7 7 7 7"/></svg></button>
+      <button class="car-nav next" id="carNext" aria-label="Foto siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></button>
+      <div class="car-dots" id="carDots"></div>
+    </div>
+  </section>
+
+  <!-- ---------- Location ---------- -->
+  <section class="scene location" data-screen-label="Ubicación">
+    <div class="ornament reveal">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+        <path d="M16 4c0 6-4 9-4 13a4 4 0 0 0 8 0c0-4-4-7-4-13Z"/>
+        <path d="M16 30V18"/><path d="M16 22c-3-1-5-3-6-6M16 24c3-1 5-3 6-6"/>
+      </svg>
+    </div>
+    <h2 class="section-title reveal" style="--d:60ms">Cuándo y dónde</h2>
+
+    <div class="venue reveal" style="--d:140ms">
+      <p class="vtype">Ceremonia &amp; Fiesta</p>
+      <p class="vname">La Posta Eventos</p>
+      <p class="vmeta">Av. 12 de Octubre 1940 · Del Viso, Pilar · Buenos Aires</p>
+      <span class="vtime">18:00 h</span>
+    </div>
+
+    <div class="map-frame reveal" style="--d:300ms">
+      <iframe
+        title="Mapa de la boda"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=La+Posta+Eventos+Av+12+de+Octubre+1940+Del+Viso+Pilar+Buenos+Aires&z=15&output=embed"></iframe>
+    </div>
+    <div class="center">
+      <a class="map-link reveal" style="--d:360ms" href="https://www.google.com/maps?q=La+Posta+Eventos+Av+12+de+Octubre+1940+Del+Viso+Pilar+Buenos+Aires" target="_blank" rel="noopener">
+        Cómo llegar
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ---------- Dress code ---------- -->
+  <section class="scene dress" data-screen-label="Código de vestimenta">
+    <div class="ornament reveal">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+        <path d="M16 4c0 6-4 9-4 13a4 4 0 0 0 8 0c0-4-4-7-4-13Z"/>
+        <path d="M16 30V18"/><path d="M16 22c-3-1-5-3-6-6M16 24c3-1 5-3 6-6"/>
+      </svg>
+    </div>
+    <h2 class="section-title reveal" style="--d:60ms">Código de vestimenta</h2>
+    <p class="dress-badge reveal" style="--d:140ms">Elegante</p>
+    <p class="lede reveal" style="--d:200ms">Vestite para celebrar. Si te inspira nuestra paleta, estos tonos suaves nos encantan.</p>
+    <div class="swatches reveal" style="--d:280ms">
+      <div class="swatch"><div class="chip" style="background:#B8A9C9"></div><div class="nm">Lavanda polvo</div></div>
+      <div class="swatch"><div class="chip" style="background:#A8BFA8"></div><div class="nm">Salvia</div></div>
+      <div class="swatch"><div class="chip" style="background:#C4A4A4"></div><div class="nm">Rosa palo</div></div>
+      <div class="swatch"><div class="chip" style="background:#1C1C1C"></div><div class="nm">Negro</div></div>
+      <div class="swatch"><div class="chip" style="background:#D4C5A9"></div><div class="nm">Lino cálido</div></div>
+      <div class="swatch"><div class="chip" style="background:#9E8E7A"></div><div class="nm">Bronce suave</div></div>
+      <div class="swatch"><div class="chip" style="background:#C8B89A"></div><div class="nm">Arena dorada</div></div>
+      <div class="swatch"><div class="chip" style="background:#4A3F35"></div><div class="nm">Espresso</div></div>
+    </div>
+    <p class="dress-note reveal" style="--d:340ms">Te pedimos con cariño reservar el blanco para la novia.</p>
+  </section>
+
+  <!-- ---------- Music / Spotify ---------- -->
+  <section class="scene music" data-screen-label="Música">
+    <div class="ornament reveal">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+        <path d="M16 4c0 6-4 9-4 13a4 4 0 0 0 8 0c0-4-4-7-4-13Z"/>
+        <path d="M16 30V18"/><path d="M16 22c-3-1-5-3-6-6M16 24c3-1 5-3 6-6"/>
+      </svg>
+    </div>
+    <h2 class="section-title reveal" style="--d:60ms">La música de la fiesta</h2>
+    <p class="lede center reveal" style="--d:140ms">Ayudanos a armar la playlist: sumá las canciones que no pueden faltar para que bailemos toda la noche.</p>
+
+    <div class="sp-embed reveal" style="--d:200ms">
+      <iframe title="Playlist de la boda" style="border-radius:14px" src="https://open.spotify.com/embed/playlist/1rDwfLO3cV0cLsbf5tCLMz?utm_source=generator&theme=0" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <a class="spotify-card reveal" id="spotifyLink" style="--d:260ms" href="https://open.spotify.com/playlist/1rDwfLO3cV0cLsbf5tCLMz?si=NsSwWcupSmC8UtdOXVygRA&pi=8yqfgsK4Tcy5j" target="_blank" rel="noopener">
+      <span class="sp-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.586 14.424a.623.623 0 0 1-.857.207c-2.348-1.435-5.304-1.76-8.785-.964a.623.623 0 1 1-.277-1.215c3.809-.87 7.077-.496 9.712 1.115a.623.623 0 0 1 .207.857Zm1.223-2.722a.78.78 0 0 1-1.072.257c-2.688-1.652-6.786-2.13-9.965-1.166a.78.78 0 1 1-.452-1.493c3.63-1.1 8.146-.568 11.233 1.328a.78.78 0 0 1 .256 1.073Zm.105-2.835c-3.223-1.914-8.54-2.09-11.618-1.156a.936.936 0 1 1-.542-1.79c3.532-1.072 9.404-.865 13.115 1.338a.936.936 0 0 1-.955 1.608Z"/></svg>
+      </span>
+      <span class="sp-text">
+        <span class="sp-title">Agregar canciones en Spotify</span>
+        <span class="sp-sub">Abrí la lista colaborativa y sumá tus temas</span>
+      </span>
+      <svg class="sp-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+    </a>
+
+    <p class="sp-help reveal" style="--d:320ms">Tocá el botón, abrí la lista en Spotify y usá <strong>"Agregar a esta playlist"</strong> para buscar y sumar tus canciones. 🎶</p>
+  </section>
+
+  <!-- ---------- RSVP ---------- -->
+  <section class="scene rsvp" data-screen-label="RSVP">
+    <div class="ornament reveal">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+        <path d="M16 4c0 6-4 9-4 13a4 4 0 0 0 8 0c0-4-4-7-4-13Z"/>
+        <path d="M16 30V18"/><path d="M16 22c-3-1-5-3-6-6M16 24c3-1 5-3 6-6"/>
+      </svg>
+    </div>
+    <h2 class="section-title reveal" style="--d:60ms">Confirmá tu asistencia</h2>
+    <p class="lede reveal" style="--d:140ms">Por favor confirmanos antes del 11 de septiembre. ¡Queremos celebrar con vos!</p>
+
+    <form id="rsvpForm" class="reveal" style="--d:220ms" autocomplete="off">
+      <div class="field">
+        <label for="name">Tu nombre completo</label>
+        <input type="text" id="name" name="name" required placeholder="Nombre y apellido" />
+      </div>
+
+      <div class="field">
+        <label>¿Vas a poder acompañarnos?</label>
+        <div class="choice" id="attendChoice">
+          <input type="radio" id="att-yes" name="attend" value="si" required />
+          <label for="att-yes">Sí</label>
+          <input type="radio" id="att-no" name="attend" value="no" />
+          <label for="att-no">No</label>
+        </div>
+      </div>
+
+      <div class="reveal-on-yes" id="yesExtras">
+        <div class="yes-inner">
+        <div class="field">
+          <label>¿Tenés alguna preferencia alimentaria?</label>
+          <div class="chips">
+            <input type="checkbox" id="diet-veg" name="vegetariano" />
+            <label for="diet-veg">Vegetariano/a</label>
+            <input type="checkbox" id="diet-vegan" name="vegano" />
+            <label for="diet-vegan">Vegano/a</label>
+            <input type="checkbox" id="diet-tacc" name="sintacc" />
+            <label for="diet-tacc">Sin TACC (celíaco/a)</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>¿Venís en el micro que ponemos los novios?</label>
+          <div class="choice choice-col" id="busChoice">
+            <input type="radio" id="bus-both" name="bus" value="ida-vuelta" />
+            <label for="bus-both">Sí, ida y vuelta</label>
+            <input type="radio" id="bus-ida" name="bus" value="solo-ida" />
+            <label for="bus-ida">Solo ida</label>
+            <input type="radio" id="bus-vuelta" name="bus" value="solo-vuelta" />
+            <label for="bus-vuelta">Solo vuelta</label>
+            <input type="radio" id="bus-no" name="bus" value="no" />
+            <label for="bus-no">No, voy por mi cuenta</label>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="msg">Un mensaje para los novios (opcional)</label>
+        <textarea id="msg" name="msg" placeholder="Restricciones alimentarias, buenos deseos…"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Enviar confirmación</button>
+    </form>
+
+    <div id="rsvpDone" class="rsvp-done hidden">
+      <div class="check">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></svg>
+      </div>
+      <h3 id="doneTitle">¡Gracias!</h3>
+      <p id="doneMsg">Hemos recibido tu confirmación.</p>
+      <button class="edit" id="editRsvp">Editar mi respuesta</button>
+    </div>
+  </section>
+
+  <!-- ---------- Gifts ---------- -->
+  <section class="scene gifts" data-screen-label="Regalos">
+    <div class="ornament reveal">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+        <path d="M16 4c0 6-4 9-4 13a4 4 0 0 0 8 0c0-4-4-7-4-13Z"/>
+        <path d="M16 30V18"/><path d="M16 22c-3-1-5-3-6-6M16 24c3-1 5-3 6-6"/>
+      </svg>
+    </div>
+    <h2 class="section-title reveal" style="--d:60ms">Tu presencia es el mejor regalo</h2>
+    <p class="lede reveal" style="--d:140ms">Si aun así querés acompañarnos con algo más, con este aporte nos ayudás a escribir el próximo capítulo.</p>
+
+    <div class="gift-cards">
+      <div class="gift-card reveal" style="--d:220ms">
+        <p class="gift-cur">Transferencia en pesos</p>
+        <button class="alias-row" type="button" data-copy="BODA.B2B" aria-label="Copiar alias en pesos">
+          <span class="alias-val">BODA.B2B</span>
+          <span class="alias-copy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            <span class="copy-tx">Copiar</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="gift-card reveal" style="--d:300ms">
+        <p class="gift-cur">Transferencia en dólares</p>
+        <button class="alias-row" type="button" data-copy="BODA.B2B.USD" aria-label="Copiar alias en dólares">
+          <span class="alias-val">BODA.B2B.USD</span>
+          <span class="alias-copy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            <span class="copy-tx">Copiar</span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <p class="gift-note reveal" style="--d:360ms">Tocá el alias para copiarlo. ¡Gracias de corazón! 💛</p>
+  </section>
+
+  <!-- ---------- Footer ---------- -->
+  <footer class="scene footer" data-screen-label="Cierre">
+    <div class="monogram reveal">G &amp; G</div>
+    <div class="hash reveal" style="--d:120ms">#GiovannaYGuido2026</div>
+    <p class="closing reveal" style="--d:220ms">Con amor, los esperamos</p>
+  </footer>
+</main>
+
+<!-- ====================================================== -->
+<!-- SCRIPTS                                                 -->
+<!-- ====================================================== -->
+<script>
+(function () {
+  "use strict";
+
+  /* ----- Envelope ----- */
+  var env = document.getElementById('envelope');
+  var openBtn = document.getElementById('openBtn');
+  function openEnvelope() {
+    env.classList.add('is-open');
+    document.body.style.overflow = '';
+    setTimeout(function () { env.style.display = 'none'; }, 1000);
+  }
+  openBtn.addEventListener('click', openEnvelope);
+  var envSeal = document.querySelector('.env-seal');
+  var envCard = document.querySelector('.env-card');
+  if (envSeal) envSeal.addEventListener('click', openEnvelope);
+  if (envCard) envCard.addEventListener('click', openEnvelope);
+  document.body.style.overflow = 'hidden';
+
+  /* ----- Countdown ----- */
+  var target = new Date('2026-10-11T18:00:00-03:00').getTime();
+  var cells = {
+    d: document.querySelector('[data-c="d"]'),
+    h: document.querySelector('[data-c="h"]'),
+    m: document.querySelector('[data-c="m"]'),
+    s: document.querySelector('[data-c="s"]')
+  };
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function tick() {
+    var diff = target - Date.now();
+    if (diff < 0) diff = 0;
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    cells.d.textContent = d;
+    cells.h.textContent = pad(h);
+    cells.m.textContent = pad(m);
+    cells.s.textContent = pad(s);
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  /* ----- Scroll reveal ----- */
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce) {
+    document.documentElement.classList.add('anim');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  }
+
+  /* ----- Photo carousel ----- */
+  (function () {
+    var viewport = document.getElementById('carViewport');
+    var track = document.getElementById('carTrack');
+    var dotsWrap = document.getElementById('carDots');
+    var prevBtn = document.getElementById('carPrev');
+    var nextBtn = document.getElementById('carNext');
+    if (!viewport || !track) return;
+    var slides = Array.prototype.slice.call(track.children);
+    var current = 0, autoTimer = null, AUTO_MS = 4500;
+
+    slides.forEach(function (s, i) {
+      var d = document.createElement('button');
+      d.className = 'car-dot' + (i === 0 ? ' on' : '');
+      d.setAttribute('aria-label', 'Ir a la foto ' + (i + 1));
+      d.addEventListener('click', function () { goTo(i); restartAuto(); });
+      dotsWrap.appendChild(d);
+    });
+    var dots = Array.prototype.slice.call(dotsWrap.children);
+
+    function goTo(i, instant) {
+      current = Math.max(0, Math.min(slides.length - 1, i));
+      var s = slides[current]; if (!s) return;
+      var target = Math.max(0, s.offsetLeft - (viewport.clientWidth - s.clientWidth) / 2);
+      if (instant) { viewport.scrollLeft = target; update(); } else { animateScroll(target); }
+    }
+    var animId = null;
+    function animateScroll(target) {
+      if (animId) cancelAnimationFrame(animId);
+      viewport.classList.add('dragging');
+      var start = viewport.scrollLeft, dist = target - start, t0 = performance.now(), dur = 460;
+      function step(now) {
+        var p = Math.min(1, (now - t0) / dur);
+        var e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+        viewport.scrollLeft = start + dist * e;
+        if (p < 1) animId = requestAnimationFrame(step);
+        else { animId = null; viewport.classList.remove('dragging'); }
+      }
+      animId = requestAnimationFrame(step);
+    }
+
+    var rafPending = false;
+    function update() {
+      rafPending = false;
+      var vpRect = viewport.getBoundingClientRect();
+      var vpCenter = vpRect.left + vpRect.width / 2;
+      var closest = 0, closestDist = Infinity;
+      slides.forEach(function (s, i) {
+        var r = s.getBoundingClientRect();
+        var c = r.left + r.width / 2;
+        var dist = Math.abs(c - vpCenter);
+        var t = Math.min(1, dist / (r.width || 1));
+        s.style.transform = 'scale(' + (1 - t * 0.12).toFixed(3) + ')';
+        s.style.opacity = (1 - t * 0.45).toFixed(3);
+        if (dist < closestDist) { closestDist = dist; closest = i; }
+      });
+      current = closest;
+      slides.forEach(function (s, i) { s.classList.toggle('active', i === closest); });
+      for (var k = 0; k < dots.length; k++) dots[k].classList.toggle('on', k === current);
+    }
+    function requestUpdate() { if (!rafPending) { rafPending = true; requestAnimationFrame(update); } }
+    viewport.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
+
+    prevBtn.addEventListener('click', function () { goTo(current - 1); restartAuto(); });
+    nextBtn.addEventListener('click', function () { goTo(current + 1); restartAuto(); });
+
+    function autoNext() { goTo(current + 1 >= slides.length ? 0 : current + 1); }
+    function startAuto() { if (reduce || slides.length < 2) return; stopAuto(); autoTimer = setInterval(autoNext, AUTO_MS); }
+    function stopAuto() { if (autoTimer) { clearInterval(autoTimer); autoTimer = null; } }
+    function restartAuto() { startAuto(); }
+    viewport.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') stopAuto(); });
+    viewport.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') startAuto(); });
+
+    var isDown = false, startX = 0, startScroll = 0;
+    viewport.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse') return;
+      isDown = true; startX = e.clientX; startScroll = viewport.scrollLeft;
+      viewport.classList.add('dragging'); stopAuto();
+    });
+    window.addEventListener('pointermove', function (e) {
+      if (!isDown) return;
+      viewport.scrollLeft = startScroll - (e.clientX - startX);
+    });
+    window.addEventListener('pointerup', function () {
+      if (!isDown) return;
+      isDown = false; viewport.classList.remove('dragging');
+      goTo(current); startAuto();
+    });
+
+    requestAnimationFrame(update);
+    setTimeout(update, 300);
+    setTimeout(startAuto, 1200);
+  })();
+
+  /* ----- RSVP ----- */
+  var form = document.getElementById('rsvpForm');
+  var done = document.getElementById('rsvpDone');
+  var doneTitle = document.getElementById('doneTitle');
+  var doneMsg = document.getElementById('doneMsg');
+  var yesExtras = document.getElementById('yesExtras');
+  var KEY = 'gg-rsvp';
+
+  var RSVP_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwwLQRcdVyn1ItmyYqytZ0x5iyDkZ68VcIK89Zm_W4gsO0RjgLccOPt2lJZqvA9Ea3J/exec';
+
+  function sendToSheet(data) {
+    if (!RSVP_ENDPOINT) return;
+    try {
+      var payload = {
+        fecha: new Date().toLocaleString('es-AR'),
+        nombre: data.name,
+        asiste: data.attend === 'si' ? 'Sí' : 'No',
+        vegetariano: data.vegetariano ? 'Sí' : '',
+        vegano: data.vegano ? 'Sí' : '',
+        sintacc: data.sintacc ? 'Sí' : '',
+        micro: data.bus || '',
+        mensaje: data.msg || ''
+      };
+      fetch(RSVP_ENDPOINT, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload)
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
+  function syncExtras() {
+    var att = form.querySelector('input[name="attend"]:checked');
+    yesExtras.classList.toggle('open', !!att && att.value === 'si');
+  }
+  form.addEventListener('change', function (e) {
+    if (e.target.name === 'attend') syncExtras();
+  });
+
+  function busLabel(v) {
+    return { 'ida-vuelta': 'ida y vuelta', 'solo-ida': 'solo ida', 'solo-vuelta': 'solo vuelta', 'no': 'por su cuenta' }[v] || '';
+  }
+
+  function showDone(data) {
+    var first = (data.name.split(' ')[0] || '');
+    if (data.attend === 'no') {
+      doneTitle.textContent = 'Te extrañaremos';
+      doneMsg.textContent = 'Gracias por avisarnos, ' + first + '. ¡Vas a estar en nuestros corazones!';
+    } else {
+      doneTitle.textContent = '¡Nos vemos pronto!';
+      var extra = [];
+      var diet = [];
+      if (data.vegetariano) diet.push('vegetariano/a');
+      if (data.vegano) diet.push('vegano/a');
+      if (data.sintacc) diet.push('sin TACC');
+      if (diet.length) extra.push('Anotamos: ' + diet.join(' · ') + '.');
+      if (data.bus && data.bus !== 'no') extra.push('Te guardamos lugar en el micro (' + busLabel(data.bus) + ').');
+      doneMsg.textContent = '¡Gracias, ' + first + '! Confirmación recibida. ' + extra.join(' ');
+    }
+    form.classList.add('hidden');
+    done.classList.remove('hidden');
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var fd = new FormData(form);
+    var data = {
+      name: (fd.get('name') || '').trim(),
+      attend: fd.get('attend'),
+      vegetariano: !!fd.get('vegetariano'),
+      vegano: !!fd.get('vegano'),
+      sintacc: !!fd.get('sintacc'),
+      bus: fd.get('bus') || '',
+      msg: (fd.get('msg') || '').trim()
+    };
+    if (!data.name || !data.attend) return;
+    try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (err) {}
+    sendToSheet(data);
+    showDone(data);
+  });
+
+  document.getElementById('editRsvp').addEventListener('click', function () {
+    done.classList.add('hidden');
+    form.classList.remove('hidden');
+  });
+
+  /* ----- Gift alias copy ----- */
+  document.querySelectorAll('.alias-row').forEach(function (row) {
+    row.addEventListener('click', function () {
+      var val = row.getAttribute('data-copy');
+      var label = row.querySelector('.copy-tx');
+      function flash() {
+        row.classList.add('copied');
+        if (label) label.textContent = '¡Copiado!';
+        setTimeout(function () {
+          row.classList.remove('copied');
+          if (label) label.textContent = 'Copiar';
+        }, 1800);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(val).then(flash).catch(function () { fallbackCopy(val); flash(); });
+      } else { fallbackCopy(val); flash(); }
+    });
+  });
+  function fallbackCopy(text) {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); document.body.removeChild(ta);
+    } catch (e) {}
+  }
+
+  /* ----- Restore prior RSVP submission ----- */
+  try {
+    var saved = JSON.parse(localStorage.getItem(KEY) || 'null');
+    if (saved && saved.name) {
+      var n = form.querySelector('#name'); if (n) n.value = saved.name;
+      var m = form.querySelector('#msg'); if (m) m.value = saved.msg || '';
+      var radio = form.querySelector('input[name="attend"][value="' + saved.attend + '"]');
+      if (radio) radio.checked = true;
+      if (saved.vegetariano) { var v = form.querySelector('#diet-veg'); if (v) v.checked = true; }
+      if (saved.vegano) { var vg = form.querySelector('#diet-vegan'); if (vg) vg.checked = true; }
+      if (saved.sintacc) { var t = form.querySelector('#diet-tacc'); if (t) t.checked = true; }
+      if (saved.bus) { var b = form.querySelector('input[name="bus"][value="' + saved.bus + '"]'); if (b) b.checked = true; }
+      syncExtras();
+      showDone(saved);
+    }
+  } catch (err) {}
+})();
+</script>
+
+</body>
+</html>
