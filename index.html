@@ -518,8 +518,7 @@
       requestAnimationFrame(function () {
         var rect = done.getBoundingClientRect();
         var docTop = rect.top + window.scrollY;
-        var target = Math.max(0, docTop - Math.max(24, (window.innerHeight - rect.height) / 2));
-        smoothScrollTo(target, 600);
+        smoothScrollTo(Math.max(0, docTop - 40), 600);
       });
     }
   }
