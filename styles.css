@@ -1066,6 +1066,12 @@ h1, h2, h3 {
 }
 .hidden { display: none !important; }
 
+/* Oculta encabezado RSVP después de confirmar */
+.rsvp.confirmed .ornament,
+.rsvp.confirmed .section-title,
+.rsvp.confirmed .lede { display: none; }
+.rsvp.confirmed { padding-top: 48px; padding-bottom: 48px; }
+
 /* ============================================================
    Gifts
    ============================================================ */

@@ -514,11 +514,13 @@
     }
     form.classList.add('hidden');
     done.classList.remove('hidden');
+    var rsvpSection = document.querySelector('.rsvp');
+    if (rsvpSection) rsvpSection.classList.add('confirmed');
     if (doScroll) {
       requestAnimationFrame(function () {
-        var rect = done.getBoundingClientRect();
+        var rect = rsvpSection ? rsvpSection.getBoundingClientRect() : done.getBoundingClientRect();
         var docTop = rect.top + window.scrollY;
-        smoothScrollTo(Math.max(0, docTop - 40), 600);
+        smoothScrollTo(Math.max(0, docTop), 600);
       });
     }
   }
@@ -559,6 +561,8 @@
   document.getElementById('editRsvp').addEventListener('click', function () {
     done.classList.add('hidden');
     form.classList.remove('hidden');
+    var rsvpSection = document.querySelector('.rsvp');
+    if (rsvpSection) rsvpSection.classList.remove('confirmed');
   });
 
   /* ----- Gift alias copy ----- */
